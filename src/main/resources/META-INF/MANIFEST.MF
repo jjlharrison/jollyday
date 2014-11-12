@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Export-Package: de.jollyday;uses:="org.joda.time",
- de.jollyday.holidaytype;uses:="de.jollyday"
+Export-Package: uk.me.jjlharrison;uses:="org.joda.time",
+ uk.me.jjlharrison.holidaytype;uses:="uk.me.jjlharrison"
 Bundle-Version: 0.4.0
 Tool: Bundlor 1.0.0.RELEASE
 Bundle-Name: Jollyday
