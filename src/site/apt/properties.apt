@@ -3,16 +3,16 @@ API properties
   The general API configuration resides within the <<<jollyday.properties>>> file contained
   in the provided jar file. You have two options to overload these properties.
 
-  You can specify a comma separated list of URLs with the system property <<<uk.me.jjlharrison.config.urls>>>
+  You can specify a comma separated list of URLs with the system property <<<com.jjlharrison.config.urls>>>
   which point to properties files to overload the basic properties.
 
-  Example: <<<-Duk.me.jjlharrison.config.urls=file:/some/path/new.properties,http://myserver/some/path/further.properties,jar:file:myLibrary.jar!/my.properties>>>
+  Example: <<<-Dcom.jjlharrison.config.urls=file:/some/path/new.properties,http://myserver/some/path/further.properties,jar:file:myLibrary.jar!/my.properties>>>
 
   You can specify a comma separated list of classes which implement the ConfigurationProvider interface
-  with the system property <<<uk.me.jjlharrison.config.providers>>>. This will overload the basic and the
+  with the system property <<<com.jjlharrison.config.providers>>>. This will overload the basic and the
   URL specified properties.
 
-  Example: <<<-Duk.me.jjlharrison.config.providers=some.package.name.MyConfigurationProvider,some.other.package.AnotherConfigurationProvider>>>
+  Example: <<<-Dcom.jjlharrison.config.providers=some.package.name.MyConfigurationProvider,some.other.package.AnotherConfigurationProvider>>>
 
   You can do both where each will overload the other. The order of loading properties is Base, URLs and
   ConfigurationProvider.
@@ -32,7 +32,7 @@ manager.impl=DefaultHolidayManager
 
 --------
 manager.impl=DefaultHolidayManager
-manager.impl.us=uk.me.jjlharrison.impl.MyXMLManager
+manager.impl.us=com.jjlharrison.impl.MyXMLManager
 --------
 
   This will let the MyXMLManager class be used for calculating US holidays and the
@@ -44,13 +44,13 @@ manager.impl.us=uk.me.jjlharrison.impl.MyXMLManager
   configured depending on the class to parse the info from.
 
 --------
-parser.impl.uk.me.jjlharrison.config.Fixed=FixedParser
-parser.impl.uk.me.jjlharrison.config.FixedWeekdayInMonth=FixedWeekdayInMonthParser
-parser.impl.uk.me.jjlharrison.config.IslamicHoliday=IslamicHolidayParser
-parser.impl.uk.me.jjlharrison.config.ChristianHoliday=ChristianHolidayParser
-parser.impl.uk.me.jjlharrison.config.RelativeToFixed=RelativeToFixedParser
-parser.impl.uk.me.jjlharrison.config.RelativeToWeekdayInMonth=RelativeToWeekdayInMonthParser
-parser.impl.uk.me.jjlharrison.config.FixedWeekdayBetweenFixed=FixedWeekdayBetweenFixedParser
+parser.impl.com.jjlharrison.config.Fixed=FixedParser
+parser.impl.com.jjlharrison.config.FixedWeekdayInMonth=FixedWeekdayInMonthParser
+parser.impl.com.jjlharrison.config.IslamicHoliday=IslamicHolidayParser
+parser.impl.com.jjlharrison.config.ChristianHoliday=ChristianHolidayParser
+parser.impl.com.jjlharrison.config.RelativeToFixed=RelativeToFixedParser
+parser.impl.com.jjlharrison.config.RelativeToWeekdayInMonth=RelativeToWeekdayInMonthParser
+parser.impl.com.jjlharrison.config.FixedWeekdayBetweenFixed=FixedWeekdayBetweenFixedParser
 --------
 
   The configuration property name starts with <<<parser.impl>>> and finishes with the XML class

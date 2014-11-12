@@ -7,7 +7,7 @@ Using inside an Application Server
     
 -----------------------
 <dependency>
-    <groupId>uk.me.jjlharrison</groupId>
+    <groupId>com.jjlharrison</groupId>
     <artifactId>jollyday</artifactId>
     <version>0.4.5</version>
     <type>jar</type>

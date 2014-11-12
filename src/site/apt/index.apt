@@ -43,7 +43,7 @@ Maven
 
 -----------------------
 <dependency>
-	<groupId>uk.me.jjlharrison</groupId>
+	<groupId>com.jjlharrison</groupId>
 	<artifactId>jollyday</artifactId>
 </dependency>
 -----------------------
